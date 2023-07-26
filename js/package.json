@@ -1,0 +1,11 @@
+{
+  "name": "private-entities",
+  "version": "1.0.0",
+  "description": "private protos generated objects",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
