@@ -1,9 +1,7 @@
 version: v1
 
 breaking:
-
   use:
-
     - FILE
 
 lint:
@@ -11,3 +9,4 @@ lint:
     - DEFAULT
   ignore:
     - google/type/datetime.proto
+  
