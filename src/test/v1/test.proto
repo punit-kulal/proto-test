@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package test;
+package test.v1;
 
 message Test {
   optional string name = 1;
