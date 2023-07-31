@@ -6,3 +6,6 @@ lint:
 
 check-compatibility:
 	buf breaking "src" --against  "https://github.com/punit-kulal/proto-test.git#subdir=src"
+
+format:
+	buf format src -w
