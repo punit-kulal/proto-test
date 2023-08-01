@@ -3,7 +3,7 @@ build:
 	bash ./scripts/js-proto-generator.sh
 
 lint: 
-	buf lint
+	buf lint src
 
 check-compatibility:
 	buf breaking "src" --against  "https://github.com/punit-kulal/proto-test.git#subdir=src"
