@@ -11,7 +11,7 @@
   "files": [
     "js/protos.js"
   ],
-  "devDependencies": {
+  "dependencies": {
     "protobufjs": "^7.2.4"
   }
 }
