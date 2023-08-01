@@ -10,3 +10,6 @@ check-compatibility:
 
 format:
 	buf format src -w
+
+setup:
+	git config --local core.hooksPath .githooks/
