@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "files": [
-    "js/proto.js"
+    "js/protos.js"
   ],
   "devDependencies": {
     "protobufjs": "^7.2.4"
