@@ -1,12 +1,9 @@
 syntax = "proto3";
 
-package test.v1;
-
-import "common/v1/abc.proto";
+package test.v2;
 
 message Test {
   optional string name = 1;
   optional int32 id = 2;
   optional string email = 3;
-  common.v1.ABC abc = 4;
 }

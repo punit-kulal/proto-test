@@ -1,5 +1,6 @@
 build:
 	buf generate src
+	bash ./scripts/js-proto-generator.sh
 
 lint: 
 	buf lint
