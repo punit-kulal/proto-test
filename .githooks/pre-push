@@ -5,4 +5,4 @@ make build
 if [[ -n $(git status -s) ]]; then
   echo "There are unstaged changes in the repository."
   exit 1
-else
+fi
