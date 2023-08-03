@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "private-entities"
-version = "0.1.0"
+version = "0.3.0"
 description = ""
 authors = ["Punit Kulal <punitkulal1996@gmail.com>"]
 readme = "README.md"
@@ -8,9 +8,6 @@ packages = [{ include = "python_protos" }]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-
-[tool.poetry-version-plugin]
-source = "git-tag"
 
 [build-system]
 requires = ["poetry-core"]
