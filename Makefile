@@ -1,6 +1,7 @@
 build:
 	buf generate src
 	bash ./scripts/js-proto-generator.sh
+	poetry build
 
 lint: 
 	buf lint src

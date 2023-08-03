@@ -6,3 +6,5 @@ plugins:
   #   out: js
   - plugin: buf.build/protocolbuffers/python:v23.4
     out: python_protos
+  - plugin: buf.build/protocolbuffers/pyi:v23.4
+    out: python_protos
