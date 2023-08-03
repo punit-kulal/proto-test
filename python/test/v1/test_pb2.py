@@ -11,10 +11,9 @@ from google.protobuf.internal import builder as _builder
 _sym_db = _symbol_database.Default()
 
 
-from common.v1 import abc_pb2 as common_dot_v1_dot_abc__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x12test/v1/test.proto\x12\x07test.v1\x1a\x13\x63ommon/v1/abc.proto\"\x8b\x01\n\x04Test\x12\x17\n\x04name\x18\x01 \x01(\tH\x00R\x04name\x88\x01\x01\x12\x13\n\x02id\x18\x02 \x01(\x05H\x01R\x02id\x88\x01\x01\x12\x19\n\x05\x65mail\x18\x03 \x01(\tH\x02R\x05\x65mail\x88\x01\x01\x12 \n\x03\x61\x62\x63\x18\x04 \x01(\x0b\x32\x0e.common.v1.ABCR\x03\x61\x62\x63\x42\x07\n\x05_nameB\x05\n\x03_idB\x08\n\x06_emailBU\n\x0b\x63om.test.v1B\tTestProtoP\x01\xa2\x02\x03TXX\xaa\x02\x07Test.V1\xca\x02\x07Test\\V1\xe2\x02\x13Test\\V1\\GPBMetadata\xea\x02\x08Test::V1b\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x12test/v1/test.proto\x12\x07test.v1\"i\n\x04Test\x12\x17\n\x04name\x18\x01 \x01(\tH\x00R\x04name\x88\x01\x01\x12\x13\n\x02id\x18\x02 \x01(\x05H\x01R\x02id\x88\x01\x01\x12\x19\n\x05\x65mail\x18\x03 \x01(\tH\x02R\x05\x65mail\x88\x01\x01\x42\x07\n\x05_nameB\x05\n\x03_idB\x08\n\x06_emailBU\n\x0b\x63om.test.v1B\tTestProtoP\x01\xa2\x02\x03TXX\xaa\x02\x07Test.V1\xca\x02\x07Test\\V1\xe2\x02\x13Test\\V1\\GPBMetadata\xea\x02\x08Test::V1b\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -23,6 +22,6 @@ if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n\013com.test.v1B\tTestProtoP\001\242\002\003TXX\252\002\007Test.V1\312\002\007Test\\V1\342\002\023Test\\V1\\GPBMetadata\352\002\010Test::V1'
-  _globals['_TEST']._serialized_start=53
-  _globals['_TEST']._serialized_end=192
+  _globals['_TEST']._serialized_start=31
+  _globals['_TEST']._serialized_end=136
 # @@protoc_insertion_point(module_scope)
