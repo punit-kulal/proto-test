@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Punit Kulal <punitkulal1996@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "private_entities" }]
+packages = [{ include = "python" }]
 
 [tool.poetry.dependencies]
 python = "^3.9"
