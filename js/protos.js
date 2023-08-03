@@ -9,6 +9,327 @@ var $Reader = $protobuf.Reader, $Writer = $protobuf.Writer, $util = $protobuf.ut
 // Exported root namespace
 var $root = $protobuf.roots["default"] || ($protobuf.roots["default"] = {});
 
+$root.abc = (function() {
+
+    /**
+     * Namespace abc.
+     * @exports abc
+     * @namespace
+     */
+    var abc = {};
+
+    abc.v1 = (function() {
+
+        /**
+         * Namespace v1.
+         * @memberof abc
+         * @namespace
+         */
+        var v1 = {};
+
+        v1.ABC = (function() {
+
+            /**
+             * Properties of a ABC.
+             * @memberof abc.v1
+             * @interface IABC
+             * @property {string|null} [name] ABC name
+             * @property {number|null} [id] ABC id
+             * @property {string|null} [email] ABC email
+             */
+
+            /**
+             * Constructs a new ABC.
+             * @memberof abc.v1
+             * @classdesc Represents a ABC.
+             * @implements IABC
+             * @constructor
+             * @param {abc.v1.IABC=} [properties] Properties to set
+             */
+            function ABC(properties) {
+                if (properties)
+                    for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
+                        if (properties[keys[i]] != null)
+                            this[keys[i]] = properties[keys[i]];
+            }
+
+            /**
+             * ABC name.
+             * @member {string|null|undefined} name
+             * @memberof abc.v1.ABC
+             * @instance
+             */
+            ABC.prototype.name = null;
+
+            /**
+             * ABC id.
+             * @member {number|null|undefined} id
+             * @memberof abc.v1.ABC
+             * @instance
+             */
+            ABC.prototype.id = null;
+
+            /**
+             * ABC email.
+             * @member {string|null|undefined} email
+             * @memberof abc.v1.ABC
+             * @instance
+             */
+            ABC.prototype.email = null;
+
+            // OneOf field names bound to virtual getters and setters
+            var $oneOfFields;
+
+            /**
+             * ABC _name.
+             * @member {"name"|undefined} _name
+             * @memberof abc.v1.ABC
+             * @instance
+             */
+            Object.defineProperty(ABC.prototype, "_name", {
+                get: $util.oneOfGetter($oneOfFields = ["name"]),
+                set: $util.oneOfSetter($oneOfFields)
+            });
+
+            /**
+             * ABC _id.
+             * @member {"id"|undefined} _id
+             * @memberof abc.v1.ABC
+             * @instance
+             */
+            Object.defineProperty(ABC.prototype, "_id", {
+                get: $util.oneOfGetter($oneOfFields = ["id"]),
+                set: $util.oneOfSetter($oneOfFields)
+            });
+
+            /**
+             * ABC _email.
+             * @member {"email"|undefined} _email
+             * @memberof abc.v1.ABC
+             * @instance
+             */
+            Object.defineProperty(ABC.prototype, "_email", {
+                get: $util.oneOfGetter($oneOfFields = ["email"]),
+                set: $util.oneOfSetter($oneOfFields)
+            });
+
+            /**
+             * Creates a new ABC instance using the specified properties.
+             * @function create
+             * @memberof abc.v1.ABC
+             * @static
+             * @param {abc.v1.IABC=} [properties] Properties to set
+             * @returns {abc.v1.ABC} ABC instance
+             */
+            ABC.create = function create(properties) {
+                return new ABC(properties);
+            };
+
+            /**
+             * Encodes the specified ABC message. Does not implicitly {@link abc.v1.ABC.verify|verify} messages.
+             * @function encode
+             * @memberof abc.v1.ABC
+             * @static
+             * @param {abc.v1.IABC} message ABC message or plain object to encode
+             * @param {$protobuf.Writer} [writer] Writer to encode to
+             * @returns {$protobuf.Writer} Writer
+             */
+            ABC.encode = function encode(message, writer) {
+                if (!writer)
+                    writer = $Writer.create();
+                if (message.name != null && Object.hasOwnProperty.call(message, "name"))
+                    writer.uint32(/* id 1, wireType 2 =*/10).string(message.name);
+                if (message.id != null && Object.hasOwnProperty.call(message, "id"))
+                    writer.uint32(/* id 2, wireType 0 =*/16).int32(message.id);
+                if (message.email != null && Object.hasOwnProperty.call(message, "email"))
+                    writer.uint32(/* id 3, wireType 2 =*/26).string(message.email);
+                return writer;
+            };
+
+            /**
+             * Encodes the specified ABC message, length delimited. Does not implicitly {@link abc.v1.ABC.verify|verify} messages.
+             * @function encodeDelimited
+             * @memberof abc.v1.ABC
+             * @static
+             * @param {abc.v1.IABC} message ABC message or plain object to encode
+             * @param {$protobuf.Writer} [writer] Writer to encode to
+             * @returns {$protobuf.Writer} Writer
+             */
+            ABC.encodeDelimited = function encodeDelimited(message, writer) {
+                return this.encode(message, writer).ldelim();
+            };
+
+            /**
+             * Decodes a ABC message from the specified reader or buffer.
+             * @function decode
+             * @memberof abc.v1.ABC
+             * @static
+             * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+             * @param {number} [length] Message length if known beforehand
+             * @returns {abc.v1.ABC} ABC
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            ABC.decode = function decode(reader, length) {
+                if (!(reader instanceof $Reader))
+                    reader = $Reader.create(reader);
+                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abc.v1.ABC();
+                while (reader.pos < end) {
+                    var tag = reader.uint32();
+                    switch (tag >>> 3) {
+                    case 1: {
+                            message.name = reader.string();
+                            break;
+                        }
+                    case 2: {
+                            message.id = reader.int32();
+                            break;
+                        }
+                    case 3: {
+                            message.email = reader.string();
+                            break;
+                        }
+                    default:
+                        reader.skipType(tag & 7);
+                        break;
+                    }
+                }
+                return message;
+            };
+
+            /**
+             * Decodes a ABC message from the specified reader or buffer, length delimited.
+             * @function decodeDelimited
+             * @memberof abc.v1.ABC
+             * @static
+             * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+             * @returns {abc.v1.ABC} ABC
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            ABC.decodeDelimited = function decodeDelimited(reader) {
+                if (!(reader instanceof $Reader))
+                    reader = new $Reader(reader);
+                return this.decode(reader, reader.uint32());
+            };
+
+            /**
+             * Verifies a ABC message.
+             * @function verify
+             * @memberof abc.v1.ABC
+             * @static
+             * @param {Object.<string,*>} message Plain object to verify
+             * @returns {string|null} `null` if valid, otherwise the reason why it is not
+             */
+            ABC.verify = function verify(message) {
+                if (typeof message !== "object" || message === null)
+                    return "object expected";
+                var properties = {};
+                if (message.name != null && message.hasOwnProperty("name")) {
+                    properties._name = 1;
+                    if (!$util.isString(message.name))
+                        return "name: string expected";
+                }
+                if (message.id != null && message.hasOwnProperty("id")) {
+                    properties._id = 1;
+                    if (!$util.isInteger(message.id))
+                        return "id: integer expected";
+                }
+                if (message.email != null && message.hasOwnProperty("email")) {
+                    properties._email = 1;
+                    if (!$util.isString(message.email))
+                        return "email: string expected";
+                }
+                return null;
+            };
+
+            /**
+             * Creates a ABC message from a plain object. Also converts values to their respective internal types.
+             * @function fromObject
+             * @memberof abc.v1.ABC
+             * @static
+             * @param {Object.<string,*>} object Plain object
+             * @returns {abc.v1.ABC} ABC
+             */
+            ABC.fromObject = function fromObject(object) {
+                if (object instanceof $root.abc.v1.ABC)
+                    return object;
+                var message = new $root.abc.v1.ABC();
+                if (object.name != null)
+                    message.name = String(object.name);
+                if (object.id != null)
+                    message.id = object.id | 0;
+                if (object.email != null)
+                    message.email = String(object.email);
+                return message;
+            };
+
+            /**
+             * Creates a plain object from a ABC message. Also converts values to other types if specified.
+             * @function toObject
+             * @memberof abc.v1.ABC
+             * @static
+             * @param {abc.v1.ABC} message ABC
+             * @param {$protobuf.IConversionOptions} [options] Conversion options
+             * @returns {Object.<string,*>} Plain object
+             */
+            ABC.toObject = function toObject(message, options) {
+                if (!options)
+                    options = {};
+                var object = {};
+                if (message.name != null && message.hasOwnProperty("name")) {
+                    object.name = message.name;
+                    if (options.oneofs)
+                        object._name = "name";
+                }
+                if (message.id != null && message.hasOwnProperty("id")) {
+                    object.id = message.id;
+                    if (options.oneofs)
+                        object._id = "id";
+                }
+                if (message.email != null && message.hasOwnProperty("email")) {
+                    object.email = message.email;
+                    if (options.oneofs)
+                        object._email = "email";
+                }
+                return object;
+            };
+
+            /**
+             * Converts this ABC to JSON.
+             * @function toJSON
+             * @memberof abc.v1.ABC
+             * @instance
+             * @returns {Object.<string,*>} JSON object
+             */
+            ABC.prototype.toJSON = function toJSON() {
+                return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
+            };
+
+            /**
+             * Gets the default type url for ABC
+             * @function getTypeUrl
+             * @memberof abc.v1.ABC
+             * @static
+             * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns {string} The default type url
+             */
+            ABC.getTypeUrl = function getTypeUrl(typeUrlPrefix) {
+                if (typeUrlPrefix === undefined) {
+                    typeUrlPrefix = "type.googleapis.com";
+                }
+                return typeUrlPrefix + "/abc.v1.ABC";
+            };
+
+            return ABC;
+        })();
+
+        return v1;
+    })();
+
+    return abc;
+})();
+
 $root.test = (function() {
 
     /**

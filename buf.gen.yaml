@@ -5,4 +5,4 @@ plugins:
   # - plugin: buf.build/protocolbuffers/js:v3.21.2
   #   out: js
   - plugin: buf.build/protocolbuffers/python:v23.4
-    out: python
+    out: python_protos
