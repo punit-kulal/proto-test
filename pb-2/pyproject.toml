@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "private-entities-2"
+version = "0.3.0"
+description = ""
+authors = ["Punit Kulal <punitkulal1996@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "python_protos" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package test.v2;
+
+message Test {
+  optional string name = 1;
+  optional int32 id = 2;
+  optional string email = 3;
+}
