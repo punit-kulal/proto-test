@@ -8,5 +8,5 @@ plugins:
     out: python_protos
   - plugin: buf.build/protocolbuffers/pyi:v23.4
     out: python_protos
-    # - plugin: buf.build/community/danielgtaylor-betterproto:v1.2.5
-    #   out: python_protos
+  - plugin: buf.build/protocolbuffers/go:v1.31.0
+    out: sample_protos_go
